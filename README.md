@@ -1,8 +1,8 @@
-# K8bits — the tiny Kubernetes dashboard
+# K8bit — the tiny Kubernetes dashboard
 
-K8bits is a tiny dashboard that is meant to demonstrate how to use the Kubernetes API to watch for changes.
+K8bit is a tiny dashboard that is meant to demonstrate how to use the Kubernetes API to watch for changes.
 
-![K8bits — the tiny Kubernetes dashboard](preview.gif)
+![K8bit — the tiny Kubernetes dashboard](preview.gif)
 
 ## Usage
 
