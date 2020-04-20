@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K8bits</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+  <style>
+    div[data-tooltip]:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      border-top: 0.5em solid #357EDD;
+      border-left: 0.5em solid transparent;
+      border-right: 0.5em solid transparent;
+      display: none;
+    }
+
+    div[data-tooltip]:after {
+      content: attr(data-tooltip);
+      position: absolute;
+      color: white;
+      top: -1.5em;
+      left: -1em;
+      background: #357EDD;
+      padding: .25em .75em;
+      border-radius: .5em;
+      white-space: nowrap;
+      display: none;
+    }
+
+    div[data-tooltip]:hover:before,
+    div[data-tooltip]:hover:after {
+      display: inline;
+    }
+  </style>
+</head>
+
+<body class="h-min-100 bg-near-black sans-serif">
+  <div id="content" class="mw8 center flex"></div>
+  <script src='app.js'></script>
+</body>
+
+</html>
